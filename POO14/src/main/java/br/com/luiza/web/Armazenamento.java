@@ -9,7 +9,7 @@ public class Armazenamento {
 	public static ArrayList<User> getUsers() {
 		if (users == null) {
 			users = new ArrayList<>();
-			users.add(new User("Bernardo Fonseca", "bernardo@email.com", "12345".hashCode()));
+			users.add(new User("Bernardo", "bernardo@email.com", "12345".hashCode()));
 			users.add(new User("Julia Alves", "julia@email.com", "1234".hashCode()));
 		}
 		return users;
