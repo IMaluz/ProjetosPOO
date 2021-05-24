@@ -1,12 +1,12 @@
 package br.com.luiza.web;
 
 public class User {
-    private String name;
+    private String nome;
     private String email;
     private int passwordHash;
 
-    public User(String name, String email, int passwordHash) {
-        this.name = name;
+    public User(String nome, String email, int passwordHash) {
+        this.nome = nome;
         this.email = email;
         this.passwordHash = passwordHash;
     }
@@ -19,12 +19,12 @@ public class User {
         this.passwordHash = passwordHash;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String nome) {
+        this.nome = nome;
     }
 
     public String getEmail() {

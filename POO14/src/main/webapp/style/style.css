@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+*{
+	top: 0px;
+	left: 2px;
+	font-family: 'Poppins', sans-serif;
+	outline: none;
+}
+
+body{
+	line-height: 1.667;
+	font-weight: 400;
+
+}
+
+.header_one {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	transition: background 0.4s, all 0.3s linear;
+	background: #fff !important;
+	transition: transform 500ms ease, background 500ms ease;
+	-webkit-transition: transform 500ms ease, background 500ms ease;
+	box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header_one.navbar_fixed .navbar{
+	position: fixed;
+	width: 100%;
+	top: -60px;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	transform: translateY(60px);
+	transition: transform 500ms ease, background 500ms ease;
+	-webkit-transition: transform 500ms ease, background 500ms ease;
+	box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+	background: #fff;
+}
+.header_one.navbar_fixed .navbar {
+	background: #fff;
+}
+
+.header_one.navbar_fixed .navbar .nav .nav-item .nav-link {
+	line-height: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	display: block;
+	color: #555555;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 0.7px;
+	text-align: center;
+	align-items: center;
+}
+
+.navbar-collapse{
+	text-align: center;
+	align-items: center;
+}
+
+nav a:hover{
+	color: #ff5252 !important;
+}
+
+.nav-item {
+	margin: 0 10px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link.focus {
+	color: #ec2652 !important;
+}
+
+
+#login-box {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 350px;
+	margin: 0 auto;
+	border: 1px solid black;
+	background: rgba(48, 46, 45, 1);
+	opacity: 85%;
+	min-height: 250px;
+	padding: 20px;
+	z-index: 9999;
+}
+#login-box .titulo .logo-caption {
+	font-family: 'Poiret One', cursive;
+	color: white;
+	text-align: center;
+	margin-bottom: 0px;
+}
+#login-box .titulo .tweak {
+	color: #ff5252;
+}
+#login-box .controls {
+	padding-top: 30px;
+}
+#login-box .controls input {
+	border-radius: 0px;
+	background: rgb(98, 96, 96);
+	border: 0px;
+	color: white;
+	font-family: 'Nunito', sans-serif;
+}
+#login-box .controls input:focus {
+	box-shadow: none;
+}
+#login-box .controls input:first-child {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+#login-box .controls input:last-child {
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+button.btn-custom {
+	border-radius: 2px;
+	margin-top: 8px;
+	background:#ff5252;
+	border-color: rgba(48, 46, 45, 1);
+	color: white;
+	font-family: 'Nunito', sans-serif;
+}
+#login-box button.btn-custom:hover{
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	background: rgba(48, 46, 45, 1);
+	border-color: #ff5252;
+}
+#particles-js{
+  	width: 100%;
+  	height: 100%;
+  	background-size: cover;
+  	background-position: 50% 50%;
+  	position: fixed;
+    background-color: black;
+  	top: 0px;
+  	z-index:1;
+}
+
+@media only screen and (max-width: 990px) {
+	#icon-sair{
+	display: none;
+	}
+}
+
+@media only screen and (min-width: 990px) {
+	#sair{
+	display: none;
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	#icon-login{
+	display: none;
+	}
+}
+
+@media only screen and (min-width: 990px) {
+	#login{
+	display: none;
+	}
+}
